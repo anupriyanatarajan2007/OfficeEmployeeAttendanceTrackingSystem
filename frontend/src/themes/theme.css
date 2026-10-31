@@ -1,0 +1,409 @@
+/* ==========================================================================
+   AttendFlow Centralized Multi-Theme Design System
+   Themes: DARK (Default), LIGHT, OCEAN, PURPLE, GREEN, HIGH_CONTRAST
+   ========================================================================== */
+
+/* 1. DARK THEME (Default) */
+:root,
+[data-theme="DARK"] {
+  --bg-primary: #090d16;
+  --bg-secondary: #0f172a;
+  --bg-card: rgba(30, 41, 59, 0.65);
+  --bg-card-hover: rgba(30, 41, 59, 0.9);
+  --bg-glass: rgba(15, 23, 42, 0.78);
+  --bg-glass-card: rgba(30, 41, 59, 0.6);
+  --sidebar-bg: rgba(15, 23, 42, 0.85);
+  --navbar-bg: rgba(15, 23, 42, 0.85);
+
+  --text-primary: #f8fafc;
+  --text-secondary: #94a3b8;
+  --text-muted: #64748b;
+
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-subtle: rgba(255, 255, 255, 0.06);
+  --border-focus: #0ea5e9;
+
+  --accent-color: #0ea5e9;
+  --accent-hover: #38bdf8;
+  --accent-light: rgba(14, 165, 233, 0.15);
+  --accent-gradient: linear-gradient(135deg, #0284c7 0%, #06b6d4 100%);
+  --accent-glow: rgba(14, 165, 233, 0.3);
+
+  --input-bg: #0f172a;
+  --input-border: #334155;
+  --input-text: #f8fafc;
+
+  --table-header-bg: rgba(15, 23, 42, 0.6);
+  --table-row-hover: rgba(30, 41, 59, 0.35);
+  --table-border: rgba(51, 65, 85, 0.6);
+
+  --modal-bg: #0f172a;
+  --modal-backdrop: rgba(2, 6, 23, 0.82);
+
+  --scrollbar-track: rgba(15, 23, 42, 0.6);
+  --scrollbar-thumb: rgba(100, 116, 139, 0.4);
+  --scrollbar-thumb-hover: rgba(148, 163, 184, 0.6);
+}
+
+/* 2. LIGHT THEME */
+[data-theme="LIGHT"] {
+  --bg-primary: #f1f5f9;
+  --bg-secondary: #ffffff;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8fafc;
+  --bg-glass: rgba(255, 255, 255, 0.92);
+  --bg-glass-card: rgba(255, 255, 255, 0.95);
+  --sidebar-bg: #ffffff;
+  --navbar-bg: #ffffff;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+
+  --border-color: #e2e8f0;
+  --border-subtle: #cbd5e1;
+  --border-focus: #0284c7;
+
+  --accent-color: #0284c7;
+  --accent-hover: #0369a1;
+  --accent-light: rgba(2, 132, 199, 0.12);
+  --accent-gradient: linear-gradient(135deg, #0284c7 0%, #0ea5e9 100%);
+  --accent-glow: rgba(2, 132, 199, 0.2);
+
+  --input-bg: #ffffff;
+  --input-border: #cbd5e1;
+  --input-text: #0f172a;
+
+  --table-header-bg: #f8fafc;
+  --table-row-hover: #f1f5f9;
+  --table-border: #e2e8f0;
+
+  --modal-bg: #ffffff;
+  --modal-backdrop: rgba(15, 23, 42, 0.6);
+
+  --scrollbar-track: #f1f5f9;
+  --scrollbar-thumb: #cbd5e1;
+  --scrollbar-thumb-hover: #94a3b8;
+}
+
+/* 3. OCEAN BLUE THEME */
+[data-theme="OCEAN"] {
+  --bg-primary: #051020;
+  --bg-secondary: #0a1f3a;
+  --bg-card: rgba(14, 38, 71, 0.72);
+  --bg-card-hover: rgba(20, 54, 100, 0.88);
+  --bg-glass: rgba(10, 31, 58, 0.85);
+  --bg-glass-card: rgba(14, 38, 71, 0.68);
+  --sidebar-bg: rgba(10, 31, 58, 0.92);
+  --navbar-bg: rgba(10, 31, 58, 0.92);
+
+  --text-primary: #f0f9ff;
+  --text-secondary: #93c5fd;
+  --text-muted: #60a5fa;
+
+  --border-color: rgba(56, 189, 248, 0.18);
+  --border-subtle: rgba(56, 189, 248, 0.1);
+  --border-focus: #38bdf8;
+
+  --accent-color: #38bdf8;
+  --accent-hover: #7dd3fc;
+  --accent-light: rgba(56, 189, 248, 0.15);
+  --accent-gradient: linear-gradient(135deg, #0284c7 0%, #38bdf8 100%);
+  --accent-glow: rgba(56, 189, 248, 0.35);
+
+  --input-bg: #07172b;
+  --input-border: #1e3a8a;
+  --input-text: #f0f9ff;
+
+  --table-header-bg: rgba(10, 31, 58, 0.8);
+  --table-row-hover: rgba(14, 38, 71, 0.6);
+  --table-border: rgba(30, 58, 138, 0.5);
+
+  --modal-bg: #0a1f3a;
+  --modal-backdrop: rgba(3, 9, 20, 0.85);
+
+  --scrollbar-track: rgba(10, 31, 58, 0.7);
+  --scrollbar-thumb: rgba(56, 189, 248, 0.3);
+  --scrollbar-thumb-hover: rgba(56, 189, 248, 0.5);
+}
+
+/* 4. PURPLE THEME */
+[data-theme="PURPLE"] {
+  --bg-primary: #0d061a;
+  --bg-secondary: #170d2c;
+  --bg-card: rgba(35, 18, 64, 0.72);
+  --bg-card-hover: rgba(48, 25, 87, 0.88);
+  --bg-glass: rgba(23, 13, 44, 0.85);
+  --bg-glass-card: rgba(35, 18, 64, 0.68);
+  --sidebar-bg: rgba(23, 13, 44, 0.92);
+  --navbar-bg: rgba(23, 13, 44, 0.92);
+
+  --text-primary: #faf5ff;
+  --text-secondary: #d8b4fe;
+  --text-muted: #a855f7;
+
+  --border-color: rgba(192, 132, 252, 0.18);
+  --border-subtle: rgba(192, 132, 252, 0.1);
+  --border-focus: #c084fc;
+
+  --accent-color: #c084fc;
+  --accent-hover: #e9d5ff;
+  --accent-light: rgba(192, 132, 252, 0.15);
+  --accent-gradient: linear-gradient(135deg, #7e22ce 0%, #c084fc 100%);
+  --accent-glow: rgba(192, 132, 252, 0.35);
+
+  --input-bg: #120924;
+  --input-border: #581c87;
+  --input-text: #faf5ff;
+
+  --table-header-bg: rgba(23, 13, 44, 0.8);
+  --table-row-hover: rgba(35, 18, 64, 0.6);
+  --table-border: rgba(88, 28, 135, 0.5);
+
+  --modal-bg: #170d2c;
+  --modal-backdrop: rgba(13, 6, 26, 0.85);
+
+  --scrollbar-track: rgba(23, 13, 44, 0.7);
+  --scrollbar-thumb: rgba(192, 132, 252, 0.3);
+  --scrollbar-thumb-hover: rgba(192, 132, 252, 0.5);
+}
+
+/* 5. GREEN THEME */
+[data-theme="GREEN"] {
+  --bg-primary: #04140c;
+  --bg-secondary: #072517;
+  --bg-card: rgba(11, 46, 29, 0.72);
+  --bg-card-hover: rgba(16, 64, 40, 0.88);
+  --bg-glass: rgba(7, 37, 23, 0.85);
+  --bg-glass-card: rgba(11, 46, 29, 0.68);
+  --sidebar-bg: rgba(7, 37, 23, 0.92);
+  --navbar-bg: rgba(7, 37, 23, 0.92);
+
+  --text-primary: #f0fdf4;
+  --text-secondary: #86efac;
+  --text-muted: #4ade80;
+
+  --border-color: rgba(74, 222, 128, 0.18);
+  --border-subtle: rgba(74, 222, 128, 0.1);
+  --border-focus: #34d399;
+
+  --accent-color: #34d399;
+  --accent-hover: #6ee7b7;
+  --accent-light: rgba(52, 211, 153, 0.15);
+  --accent-gradient: linear-gradient(135deg, #059669 0%, #34d399 100%);
+  --accent-glow: rgba(52, 211, 153, 0.35);
+
+  --input-bg: #051c11;
+  --input-border: #065f46;
+  --input-text: #f0fdf4;
+
+  --table-header-bg: rgba(7, 37, 23, 0.8);
+  --table-row-hover: rgba(11, 46, 29, 0.6);
+  --table-border: rgba(6, 95, 70, 0.5);
+
+  --modal-bg: #072517;
+  --modal-backdrop: rgba(4, 20, 12, 0.85);
+
+  --scrollbar-track: rgba(7, 37, 23, 0.7);
+  --scrollbar-thumb: rgba(74, 222, 128, 0.3);
+  --scrollbar-thumb-hover: rgba(74, 222, 128, 0.5);
+}
+
+/* 6. HIGH CONTRAST THEME */
+[data-theme="HIGH_CONTRAST"] {
+  --bg-primary: #000000;
+  --bg-secondary: #0a0a0a;
+  --bg-card: #121212;
+  --bg-card-hover: #1e1e1e;
+  --bg-glass: #0a0a0a;
+  --bg-glass-card: #121212;
+  --sidebar-bg: #000000;
+  --navbar-bg: #000000;
+
+  --text-primary: #ffffff;
+  --text-secondary: #ffffff;
+  --text-muted: #d4d4d8;
+
+  --border-color: #ffffff;
+  --border-subtle: #d4d4d8;
+  --border-focus: #facc15;
+
+  --accent-color: #facc15;
+  --accent-hover: #fde047;
+  --accent-light: rgba(250, 204, 21, 0.25);
+  --accent-gradient: linear-gradient(135deg, #ca8a04 0%, #facc15 100%);
+  --accent-glow: rgba(250, 204, 21, 0.5);
+
+  --input-bg: #000000;
+  --input-border: #ffffff;
+  --input-text: #ffffff;
+
+  --table-header-bg: #1a1a1a;
+  --table-row-hover: #262626;
+  --table-border: #ffffff;
+
+  --modal-bg: #000000;
+  --modal-backdrop: rgba(0, 0, 0, 0.92);
+
+  --scrollbar-track: #000000;
+  --scrollbar-thumb: #ffffff;
+  --scrollbar-thumb-hover: #facc15;
+}
+
+/* ==========================================================================
+   Global Theme Dynamic Rules & Smooth Transitions
+   ========================================================================== */
+
+/* Universal smooth theme transitions */
+body,
+#root,
+header,
+aside,
+main,
+nav,
+div.glass-panel,
+div.glass-card,
+div.glass-card-interactive,
+table,
+input,
+select,
+textarea,
+button {
+  transition: background-color 200ms ease, color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+}
+
+body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+/* Glass Panels & Cards dynamically adapt to current theme */
+.glass-panel {
+  background: var(--bg-glass) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-primary);
+}
+
+.glass-card {
+  background: var(--bg-glass-card) !important;
+  border-color: var(--border-subtle) !important;
+  color: var(--text-primary);
+}
+
+.glass-card-interactive {
+  background: var(--bg-glass-card) !important;
+  border-color: var(--border-subtle) !important;
+  color: var(--text-primary);
+}
+
+.glass-card-interactive:hover {
+  background: var(--bg-card-hover) !important;
+  border-color: var(--accent-color) !important;
+  box-shadow: 0 12px 30px -10px var(--accent-glow) !important;
+}
+
+/* Tables across all pages */
+[data-theme] table {
+  color: var(--text-primary);
+}
+
+[data-theme] table thead tr {
+  background-color: var(--table-header-bg) !important;
+  border-color: var(--table-border) !important;
+}
+
+[data-theme] table th {
+  color: var(--text-secondary) !important;
+  border-color: var(--table-border) !important;
+}
+
+[data-theme] table td {
+  border-color: var(--table-border) !important;
+  color: var(--text-primary);
+}
+
+[data-theme] table tbody tr:hover {
+  background-color: var(--table-row-hover) !important;
+}
+
+/* Form Inputs, Dropdowns and Textareas */
+[data-theme] input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="button"]):not([type="reset"]),
+[data-theme] select,
+[data-theme] textarea {
+  background-color: var(--input-bg) !important;
+  color: var(--input-text) !important;
+  border-color: var(--input-border) !important;
+}
+
+[data-theme] input:focus,
+[data-theme] select:focus,
+[data-theme] textarea:focus {
+  border-color: var(--border-focus) !important;
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--accent-light) !important;
+}
+
+/* Status Badges in Light / High Contrast modes */
+[data-theme="LIGHT"] .text-slate-400,
+[data-theme="LIGHT"] .text-slate-500 {
+  color: #64748b !important;
+}
+
+[data-theme="LIGHT"] .text-white {
+  color: #0f172a !important;
+}
+
+[data-theme="LIGHT"] .text-slate-200,
+[data-theme="LIGHT"] .text-slate-300 {
+  color: #334155 !important;
+}
+
+[data-theme="LIGHT"] .text-slate-100 {
+  color: #0f172a !important;
+}
+
+[data-theme="LIGHT"] .bg-slate-900,
+[data-theme="LIGHT"] .bg-slate-950 {
+  background-color: #f1f5f9 !important;
+}
+
+[data-theme="LIGHT"] .bg-slate-800 {
+  background-color: #e2e8f0 !important;
+}
+
+[data-theme="LIGHT"] .bg-slate-800\/60,
+[data-theme="LIGHT"] .bg-slate-800\/40,
+[data-theme="LIGHT"] .bg-slate-800\/20 {
+  background-color: #f8fafc !important;
+}
+
+[data-theme="LIGHT"] .border-slate-800,
+[data-theme="LIGHT"] .border-slate-700 {
+  border-color: #cbd5e1 !important;
+}
+
+[data-theme="HIGH_CONTRAST"] .border-slate-800,
+[data-theme="HIGH_CONTRAST"] .border-slate-700 {
+  border-color: #ffffff !important;
+}
+
+[data-theme="HIGH_CONTRAST"] .text-slate-400,
+[data-theme="HIGH_CONTRAST"] .text-slate-500 {
+  color: #ffffff !important;
+}
+
+[data-theme="HIGH_CONTRAST"] .text-slate-300,
+[data-theme="HIGH_CONTRAST"] .text-slate-200 {
+  color: #ffffff !important;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-thumb-hover);
+}
